@@ -62,6 +62,8 @@ public enum EmailApps {
         public var urlScheme = "protonmail"
         public var urlPath = "//mailto:"
 
+        public init() {}
+
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
             EmailAppURLBuilder(
@@ -77,6 +79,8 @@ public enum EmailApps {
         public var name = "Gmail"
         public var urlScheme = "googlegmail"
         public var urlPath = "//co"
+
+        public init() {}
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
@@ -95,6 +99,8 @@ public enum EmailApps {
         public var urlScheme = "ms-outlook"
         public var urlPath = "//compose"
 
+        public init() {}
+
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
             EmailAppURLBuilder(
@@ -111,6 +117,8 @@ public enum EmailApps {
         public var name = "Yahoo"
         public var urlScheme = "ymail"
         public var urlPath = "//mail/compose"
+
+        public init() {}
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
@@ -129,6 +137,8 @@ public enum EmailApps {
         public var urlScheme = "readdle-spark"
         public var urlPath = "//compose"
 
+        public init() {}
+
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
             EmailAppURLBuilder(
@@ -146,6 +156,8 @@ public enum EmailApps {
         public var urlScheme = "mailto"
         /// In default app path is empty
         public var urlPath = ""
+
+        public init() {}
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
