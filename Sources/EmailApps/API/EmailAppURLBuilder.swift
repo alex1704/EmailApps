@@ -1,5 +1,5 @@
 //
-//  EmailClientURLBuilder.swift
+//  EmailAppURLBuilder.swift
 //  
 //
 //  Created by Alex Kostenko on 11.01.2023.
@@ -8,7 +8,7 @@
 import Foundation
 
 /// URL builder
-public struct EmailClientURLBuilder {
+public struct EmailAppURLBuilder {
     public let urlStart: String
     public let queryItems: [URLQueryItem]
 

@@ -64,7 +64,7 @@ public enum EmailApps {
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
-            EmailClientURLBuilder(
+            EmailAppURLBuilder(
                 urlStart: "\(urlPrefix)\(email)",
                 queryItems: [.init(name: URLQueryItem.Name.EmailSubject, value: subject),
                              .init(name: URLQueryItem.Name.EmailBody, value: body)]
@@ -80,7 +80,7 @@ public enum EmailApps {
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
-            EmailClientURLBuilder(
+            EmailAppURLBuilder(
                 urlStart: urlPrefix,
                 queryItems: [.init(name: URLQueryItem.Name.EmailTo, value: email),
                              .init(name: URLQueryItem.Name.EmailSubject, value: subject),
@@ -97,7 +97,7 @@ public enum EmailApps {
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
-            EmailClientURLBuilder(
+            EmailAppURLBuilder(
                 urlStart: urlPrefix,
                 queryItems: [.init(name: URLQueryItem.Name.EmailTo, value: email),
                              .init(name: URLQueryItem.Name.EmailSubject, value: subject),
@@ -114,7 +114,7 @@ public enum EmailApps {
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
-            EmailClientURLBuilder(
+            EmailAppURLBuilder(
                 urlStart: urlPrefix,
                 queryItems: [.init(name: URLQueryItem.Name.EmailTo, value: email),
                              .init(name: URLQueryItem.Name.EmailSubject, value: subject),
@@ -131,7 +131,7 @@ public enum EmailApps {
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
-            EmailClientURLBuilder(
+            EmailAppURLBuilder(
                 urlStart: urlPrefix,
                 queryItems: [.init(name: URLQueryItem.Name.EmailRecipient, value: email),
                              .init(name: URLQueryItem.Name.EmailSubject, value: subject),
@@ -149,7 +149,7 @@ public enum EmailApps {
 
         /// See method description in EmailApp protocol
         public func url(email: String, subject: String?, body: String?) -> URL? {
-            EmailClientURLBuilder(
+            EmailAppURLBuilder(
                 urlStart: "\(urlPrefix)\(email)",
                 queryItems: [.init(name: URLQueryItem.Name.EmailSubject, value: subject),
                              .init(name: URLQueryItem.Name.EmailBody, value: body)]

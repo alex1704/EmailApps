@@ -63,7 +63,7 @@ public struct Sparrow: EmailApp {
 
   /// See method description in EmailApp protocol
   public func url(email: String, subject: String?, body: String?) -> URL? {
-    EmailClientURLBuilder(
+    EmailAppURLBuilder(
       urlStart: "\(urlPrefix)\(email)",
       queryItems: [.init(name: URLQueryItem.Name.EmailSubject, value: subject),
                    .init(name: URLQueryItem.Name.EmailBody, value: body)]
